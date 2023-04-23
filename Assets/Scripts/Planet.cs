@@ -58,8 +58,10 @@ public class Planet : MonoBehaviour {
             _units.Add(Instantiate(_unitPrefab, new Vector3(unitPosition.x, unitPosition.y, NavMeshManager.I._currentZPosition), Quaternion.identity, transform.parent));
         }
 
+        int priority = 0;
         foreach (var unit in _units) {
-            unit.Init(endPlanet, Mathf.RoundToInt(Mathf.Pow(2, NavMeshManager.I._currentAreaIndex)));
+            unit.Init(endPlanet, Mathf.RoundToInt(Mathf.Pow(2, NavMeshManager.I._currentAreaIndex)), priority);
+            priority += 10;
         }
         NavMeshManager.I.AddAreaAndZPositionIndex();
         _units.Clear();

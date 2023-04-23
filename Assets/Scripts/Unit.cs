@@ -9,11 +9,12 @@ public class Unit : MonoBehaviour {
     private float _distance;
     private bool _isInit;
 
-    public void Init(Planet endPlanet, int layerIndex) {
+    public void Init(Planet endPlanet, int layerIndex, int priority) {
         _agent = GetComponent<NavMeshAgent>();
+        _agent.avoidancePriority = priority;
+        _agent.areaMask = layerIndex;
         _endPlanet = endPlanet;
         _targetPosition = ChangeRandomTargetPointToPlanet(_endPlanet.transform);
-        _agent.areaMask = layerIndex;
         _isInit = true;
     }
 

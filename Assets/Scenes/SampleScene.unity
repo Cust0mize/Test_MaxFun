@@ -322,7 +322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a483866129595554680dc5ba4922908e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _frameImage: {fileID: 1179114166}
 --- !u!1 &613336353
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +906,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 20
+  m_PixelsPerUnitMultiplier: 9
 --- !u!222 &1179114167
 CanvasRenderer:
   m_ObjectHideFlags: 0
