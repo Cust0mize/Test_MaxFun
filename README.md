@@ -1,3 +1,4 @@
+Геймплей https://youtu.be/d_lkoxvHLMM
 # Test_MaxFun
 Задача:сделать техническое демо игры [GALCON.](https://www.youtube.com/watch?v=UxbJJfshYLM)
 НЕ нужно делать полный клон этой игры, достаточно реализовать
